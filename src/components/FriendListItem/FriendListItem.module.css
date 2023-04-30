@@ -1,0 +1,22 @@
+.item {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	gap: 15px;
+}
+
+.online {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: green;
+}
+
+.offline {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}

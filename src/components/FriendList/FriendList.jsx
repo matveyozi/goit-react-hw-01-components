@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"; 
-
+import cssModule from "./FriendList.module.css";
 const FriendList = ({ children }) => {
-return 	<ul key={'FriendList'} className="friend-list">
+return 	<ul key={'FriendList'} className={cssModule['friend-list']}>
 		{children}
 	</ul>
 }

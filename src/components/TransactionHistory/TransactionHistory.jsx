@@ -1,5 +1,8 @@
-const TransactionHistory = ({props}) => {
-	return <table className="transaction-history">
+import PropTypes from "prop-types"; 
+import cssModule from './TransactionHistory.module.css'
+
+const TransactionHistory = ({ props }) => {
+	return <table className={cssModule['transaction-history']}>
 		<thead>
 			<tr>
 				<th>Type</th>
@@ -22,6 +25,10 @@ const TransactionHistory = ({props}) => {
 			}
 		</tbody>
 	</table>
+}
+
+TransactionHistory.propTypes = {
+	props: PropTypes.array.isRequired
 }
 
 export default TransactionHistory

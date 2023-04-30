@@ -1,0 +1,7 @@
+.transaction-history thead {
+	background-color: aquamarine;
+}
+
+.transaction-history tbody tr:nth-child(2n) {
+	background: rgba(50, 50, 50, .25);
+}

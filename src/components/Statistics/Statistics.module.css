@@ -1,0 +1,18 @@
+.statistics {
+	display: grid;
+	grid-template-rows: auto;
+	text-align: center;
+	gap: 10px;
+}
+
+.stat-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.item {
+	
+}
+.item span {
+	display: block;
+}

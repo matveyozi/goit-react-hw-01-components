@@ -1,0 +1,8 @@
+.section {
+	width: 370px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 60px;
+}

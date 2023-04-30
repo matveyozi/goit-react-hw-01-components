@@ -1,3 +1,4 @@
+import Section from './Section/Section'
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
@@ -12,17 +13,17 @@ import transactions from '../data/transactions.json';
 
 export const App = () => {
   return (
-    <section>
+    <Section>
       <Profile username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats} ></Profile>
-      <Statistics /* title={'DSA'} */ stats={statictics}></Statistics>
+      <Statistics title={'Upload docs'} stats={statictics}></Statistics>
       <FriendList>
         <FriendListItem props = {friends}></FriendListItem>
       </FriendList>
       <TransactionHistory props={transactions}></TransactionHistory>
-    </section>
+    </Section>
   );
 };
