@@ -3,7 +3,7 @@ import cssModule from './Statistics.module.css'
 const Statistics = ({title, stats}) => {
 	
 	return	<div key={stats.join('')} className={cssModule.statistics}>
-			<h2 className={cssModule.title}>{title}</h2>
+			<h2 className={title && cssModule.title}>{title}</h2>
 
 			<ul className={cssModule['stat-list']}>
 			{stats.map(item => {

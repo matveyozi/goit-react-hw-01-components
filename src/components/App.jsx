@@ -2,7 +2,6 @@ import Section from './Section/Section'
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
-import FriendListItem from './FriendListItem/FriendListItem';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 import user from '../data/user.json';
@@ -20,8 +19,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats} ></Profile>
       <Statistics title={'Upload docs'} stats={statictics}></Statistics>
-      <FriendList>
-        <FriendListItem props = {friends}></FriendListItem>
+      <FriendList friends = {friends}>
       </FriendList>
       <TransactionHistory props={transactions}></TransactionHistory>
     </Section>
